@@ -1,3 +1,5 @@
 FechaEvento,SolicitudId,Evento,EstadoAnterior,EstadoNuevo,Detalle
 "2026-10-28T19:51:11.4409039+01:00","SOL-001","EstadoInicialObservado","","Activa","Estado existente al iniciar la auditoria; creacion original no registrada."
+"2026-10-29T15:07:11.8495984+01:00","SOL-001","Caducidad","Activa","Caducada","Se alcanzo la fecha de expiracion."
+
 
