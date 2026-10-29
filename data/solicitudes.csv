@@ -1,1 +1,8 @@
-
+SolicitudId,UserId,RoleId,DuracionSolicitadaHoras,Justificacion,Ticket,Estado
+SOL-001,arecio,HELPDESK_ADMIN,2,Restablecer acceso de usuarios,,Pendiente
+SOL-002,epastor,USER_ADMIN,1,Crear cuentas para el laboratorio,,Pendiente
+SOL-003,arivas,CA_ADMIN,1,Revisar la politica de acceso condicional,INC-1042,Pendiente
+SOL-004,mangulo,GLOBAL_ADMIN,1,Resolver una incidencia administrativa critica,INC-1043,Pendiente
+SOL-005,arecio,GLOBAL_ADMIN,2,Revisar la configuracion global,INC-1044,Pendiente
+SOL-006,arivas,CA_ADMIN,1,,INC-1045,Pendiente
+SOL-007,vmaroto,HELPDESK_ADMIN,2,Ayudar a un usuario de prueba,,Pendiente
