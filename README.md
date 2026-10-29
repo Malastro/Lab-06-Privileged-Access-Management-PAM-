@@ -214,7 +214,7 @@ La ejecución de referencia utiliza siete solicitudes ficticias para comprobar t
 
 | Solicitud | Usuario | Rol solicitado | Resultado observado |
 |---|---|---|---|
-| `SOL-001` | Antonio Recio (`arecio`) | `HELPDESK_ADMIN` | Aprobada por el responsable y registrada para activación temporal. |
+| `SOL-001` | Antonio Recio (`arecio`) | `HELPDESK_ADMIN` | Aprobada por el responsable; activación temporal registrada y posteriormente marcada como `Caducada` al superar su fecha de expiración. |
 | `SOL-002` | Enrique Pastor (`epastor`) | `USER_ADMIN` | Pendiente de aprobación. |
 | `SOL-003` | Amador Rivas (`arivas`) | `CA_ADMIN` | Rechazada por el responsable. |
 | `SOL-004` | Maxi Angulo (`mangulo`) | `GLOBAL_ADMIN` | Pendiente de aprobación. |
