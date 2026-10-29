@@ -1,7 +1,7 @@
 # Lab-06: Operación Montepinar: Gestión de Accesos Privilegiados (PAM)
 
 
-### 1. Descripción del proyecto
+## 1. Descripción del proyecto
 
 Después de varios incidentes en Mirador de Montepinar S.L., Antonio Recio ha llegado a una conclusión: no se puede confiar en nadie, y mucho menos si tiene permisos de Administrador global. 
 
@@ -11,7 +11,7 @@ Así que decide imponer orden en la comunidad: a partir de ahora, quien necesite
 
 Para evitar que la gestión de accesos termine como otra junta de vecinos imposible de controlar, se ha desarrollado una simulación local de Privileged Access Management (PAM) con PowerShell y ficheros CSV.
 
-### 2. Objetivos técnicos
+## 2. Objetivos técnicos
 
 El objetivo principal es demostrar, mediante un escenario inspirado en La que se avecina, cómo se puede diseñar un flujo básico de gestión de privilegios que separe la solicitud, la validación, la aprobación y la activación temporal. Además:
 
@@ -27,7 +27,7 @@ El objetivo principal es demostrar, mediante un escenario inspirado en La que se
 - Generar informes CSV y mantener un historial de eventos.
 - Probar escenarios válidos y errores controlados.
 
-### 3. Arquitectura del proyecto
+## 3. Arquitectura del proyecto
 
 Antonio Recio quiere saber dónde está cada cosa, quién tiene acceso y quién ha autorizado semejante despropósito. Para evitar que los datos terminen desperdigados como los acuerdos de una junta de vecinos, el laboratorio se organiza en tres bloques: datos, scripts y resultados.
 
