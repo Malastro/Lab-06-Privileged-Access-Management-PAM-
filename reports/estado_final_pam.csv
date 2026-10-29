@@ -1,1 +1,9 @@
+"SolicitudId","UserId","RoleId","Validacion","DecisionResponsable","EstadoFinal","Motivo"
+"SOL-001","arecio","HELPDESK_ADMIN","Lista para aprobacion","Aprobada","Aprobada, pendiente de activacion",""
+"SOL-002","epastor","USER_ADMIN","Lista para aprobacion","Pendiente","Pendiente de aprobacion",""
+"SOL-003","arivas","CA_ADMIN","Lista para aprobacion","Rechazada","Rechazada por responsable","No se autoriza el cambio solicitado"
+"SOL-004","mangulo","GLOBAL_ADMIN","Lista para aprobacion","Pendiente","Pendiente de aprobacion",""
+"SOL-005","arecio","GLOBAL_ADMIN","Rechazada","Sin registro","No autorizable","Duracion fuera de limites"
+"SOL-006","arivas","CA_ADMIN","Rechazada","Sin registro","No autorizable","Falta la justificacion"
+"SOL-007","vmaroto","HELPDESK_ADMIN","Rechazada","Sin registro","No autorizable","Usuario inactivo"
 
