@@ -10,6 +10,35 @@ $aprobacionesPath = Join-Path $dataPath "aprobaciones.csv"
 
 $roles = Import-Csv -Path $rolesPath
 $solicitudes = Import-Csv -Path $solicitudesPath
+# Comprobar identificadores de solicitud vacios
+$solicitudesSinId = @(
+    $solicitudes |
+        Where-Object {
+            [string]::IsNullOrWhiteSpace($_.SolicitudId)
+        }
+)
+
+if ($solicitudesSinId.Count -gt 0) {
+    throw "No se puede continuar: hay solicitudes sin SolicitudId."
+}
+
+# Detectar solicitudes duplicadas
+$solicitudesDuplicadas = @(
+    $solicitudes |
+        Group-Object -Property SolicitudId |
+        Where-Object { $_.Count -gt 1 }
+)
+
+if ($solicitudesDuplicadas.Count -gt 0) {
+
+    foreach ($grupo in $solicitudesDuplicadas) {
+        Write-Host "Error: hay $($grupo.Count) solicitudes con identificador $($grupo.Name)"
+    }
+
+    throw "No se puede continuar: hay SolicitudId duplicados."
+}
+
+Write-Host "Solicitudes con identificadores duplicados: 0"
 $usuarios = Import-Csv -Path $usuariosPath
 $aprobaciones = Import-Csv -Path $aprobacionesPath
 
