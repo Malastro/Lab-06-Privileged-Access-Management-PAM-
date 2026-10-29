@@ -1,4 +1,4 @@
-# Lab-06-Privileged-Access-Management-PAM-
+# Lab-06: Operación Montepinar: Gestión de Accesos Privilegiados (PAM)
 
 
 ### 1. Descripción del proyecto
