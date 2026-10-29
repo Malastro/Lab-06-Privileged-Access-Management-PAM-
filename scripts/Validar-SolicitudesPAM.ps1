@@ -420,23 +420,37 @@ foreach ($activacion in $activaciones) {
         Where-Object { $_.SolicitudId -eq $activacion.SolicitudId } |
         Select-Object -First 1
 
-    if ($ahora -ge $fechaFin) {
-        $estadoNuevo = "Caducada"
-        $detalle = "Se alcanzo la fecha de expiracion."
-    }
-    elseif (-not $estadoSolicitud -or
-        $estadoSolicitud.EstadoFinal -ne "Aprobada, pendiente de activacion") {
-        $estadoNuevo = "Revocada"
-        $detalle = "La solicitud ya no figura como aprobada para activacion."
-    }
-    elseif ($ahora -lt $fechaInicio) {
-        $estadoNuevo = "Programada"
-        $detalle = "La fecha de inicio todavia no se ha alcanzado."
-    }
-    else {
-        $estadoNuevo = "Activa"
-        $detalle = "La activacion sigue dentro de su periodo permitido."
-    }
+   if ($estadoAnterior -in @("Revocada", "Caducada")) {
+
+    $estadoNuevo = $estadoAnterior
+    $detalle = "Estado terminal conservado. Se requiere una nueva solicitud para otra activacion."
+
+}
+elseif ($ahora -ge $fechaFin) {
+
+    $estadoNuevo = "Caducada"
+    $detalle = "Se alcanzo la fecha de expiracion."
+
+}
+elseif (-not $estadoSolicitud -or
+    $estadoSolicitud.EstadoFinal -ne "Aprobada, pendiente de activacion") {
+
+    $estadoNuevo = "Revocada"
+    $detalle = "La solicitud ya no figura como aprobada para activacion."
+
+}
+elseif ($ahora -lt $fechaInicio) {
+
+    $estadoNuevo = "Programada"
+    $detalle = "La fecha de inicio todavia no se ha alcanzado."
+
+}
+else {
+
+    $estadoNuevo = "Activa"
+    $detalle = "La activacion sigue dentro de su periodo permitido."
+
+}
 
     $activacion.Estado = $estadoNuevo
 
