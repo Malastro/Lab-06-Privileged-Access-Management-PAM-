@@ -1,1 +1,5 @@
-
+SolicitudId,Aprobador,Decision,Comentario
+SOL-001,Responsable de soporte,Aprobada,Validacion completada
+SOL-002,Responsable de IAM,Pendiente,
+SOL-003,Responsable de seguridad,Rechazada,No se autoriza el cambio solicitado
+SOL-004,Responsable de seguridad,Pendiente,
