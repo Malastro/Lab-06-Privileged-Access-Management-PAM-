@@ -1,1 +1,8 @@
-
+"SolicitudId","UserId","RoleId","Resultado","Motivos"
+"SOL-001","arecio","HELPDESK_ADMIN","Lista para aprobacion",""
+"SOL-002","epastor","USER_ADMIN","Lista para aprobacion",""
+"SOL-003","arivas","CA_ADMIN","Lista para aprobacion",""
+"SOL-004","mangulo","GLOBAL_ADMIN","Lista para aprobacion",""
+"SOL-005","arecio","GLOBAL_ADMIN","Rechazada","Duracion fuera de limites"
+"SOL-006","arivas","CA_ADMIN","Rechazada","Falta la justificacion"
+"SOL-007","vmaroto","HELPDESK_ADMIN","Rechazada","Usuario inactivo"
