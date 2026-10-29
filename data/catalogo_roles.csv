@@ -1,1 +1,5 @@
-
+RoleId,NombreRol,NivelRiesgo,DuracionMaxHoras,AprobadorRequerido,RequiereTicket
+HELPDESK_ADMIN,Helpdesk Administrator,Medio,4,Responsable de soporte,false
+USER_ADMIN,User Administrator,Medio-Alto,2,Responsable de IAM,false
+CA_ADMIN,Conditional Access Administrator,Alto,1,Responsable de seguridad,true
+GLOBAL_ADMIN, Global Administrator,Critico,1,Responsable de seguridad,true
