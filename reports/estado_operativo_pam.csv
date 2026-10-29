@@ -1,1 +1,9 @@
+"SolicitudId","UserId","RoleId","EstadoAutorizacion","EstadoActivacion","FechaActivacion","FechaExpiracion"
+"SOL-001","arecio","HELPDESK_ADMIN","Aprobada","Activa","2026-10-28T19:20:41.0139935+01:00","2026-10-28T21:20:41.0139935+01:00"
+"SOL-002","epastor","USER_ADMIN","Pendiente","No activada","",""
+"SOL-003","arivas","CA_ADMIN","Rechazada","No activada","",""
+"SOL-004","mangulo","GLOBAL_ADMIN","Pendiente","No activada","",""
+"SOL-005","arecio","GLOBAL_ADMIN","No autorizable","No activada","",""
+"SOL-006","arivas","CA_ADMIN","No autorizable","No activada","",""
+"SOL-007","vmaroto","HELPDESK_ADMIN","No autorizable","No activada","",""
 
